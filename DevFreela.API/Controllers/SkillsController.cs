@@ -2,6 +2,7 @@
 using DevFreela.API.Models;
 using DevFreela.API.Persistence;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.SqlServer.Query.Internal;
 
 namespace DevFreela.API.Controllers;
 
@@ -18,9 +19,13 @@ public class SkillsController : ControllerBase
     
     // GET api/skills
     [HttpGet]
-    public IActionResult GetAll()
+    public IActionResult GetAll(string search = "",int page = 0, int size = 10)
     {
-        var skills = _context.Skills.ToList();
+        var skills = _context.Skills
+            .Where(s => !s.IsDeleted && (search == "" || s.Description.Contains(search)))
+            .Skip(page * size)
+            .Take(size)
+            .ToList();
         
         var model = skills.Select(SkillViewModel.FromEntity).ToList();
         return Ok(model);
