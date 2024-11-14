@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DevFreela.API.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class primeiramigration : Migration
+    public partial class firstmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -54,7 +54,7 @@ namespace DevFreela.API.Persistence.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IdClient = table.Column<int>(type: "int", nullable: false),
                     IdFreelancer = table.Column<int>(type: "int", nullable: false),
-                    TotalCost = table.Column<decimal>(type: "decimal(12,2)", nullable: false),
+                    TotalCost = table.Column<float>(type: "real", nullable: false),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CompleteAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false),
