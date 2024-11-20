@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.API", "DevFreela.API\DevFreela.API.csproj", "{EF5E793B-9716-4C05-A0C5-BA540105DABC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Application", "DevFreela.Application\DevFreela.Application.csproj", "{6C0C8838-BBF5-41DB-9F06-1C01191F9427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Infrastructure", "DevFreela.Infrastructure\DevFreela.Infrastructure.csproj", "{20D189E3-08F8-4222-8A17-6A99CAEF0B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFreela.Core", "DevFreela.Core\DevFreela.Core.csproj", "{7B5CF1AF-1E4A-4613-B1E4-7A50F29046CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{EF5E793B-9716-4C05-A0C5-BA540105DABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF5E793B-9716-4C05-A0C5-BA540105DABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF5E793B-9716-4C05-A0C5-BA540105DABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C0C8838-BBF5-41DB-9F06-1C01191F9427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C0C8838-BBF5-41DB-9F06-1C01191F9427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C0C8838-BBF5-41DB-9F06-1C01191F9427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C0C8838-BBF5-41DB-9F06-1C01191F9427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D189E3-08F8-4222-8A17-6A99CAEF0B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D189E3-08F8-4222-8A17-6A99CAEF0B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D189E3-08F8-4222-8A17-6A99CAEF0B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D189E3-08F8-4222-8A17-6A99CAEF0B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B5CF1AF-1E4A-4613-B1E4-7A50F29046CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B5CF1AF-1E4A-4613-B1E4-7A50F29046CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B5CF1AF-1E4A-4613-B1E4-7A50F29046CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B5CF1AF-1E4A-4613-B1E4-7A50F29046CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
