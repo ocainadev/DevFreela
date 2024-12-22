@@ -1035,7 +1035,10 @@
       },
       "DevFreela.Core/1.0.0": {
         "runtime": {
-          "DevFreela.Core.dll": {}
+          "DevFreela.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

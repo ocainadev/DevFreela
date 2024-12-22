@@ -10,7 +10,7 @@ public class ApiExceptionHandler : IExceptionHandler
         var details = new ProblemDetails
         {
             Status = StatusCodes.Status500InternalServerError,
-            Title = "Internal Server Error"
+            Title = "EIB: Erro Interno Bruto"
         };
         
         // Fazer alguma coisa EX: log

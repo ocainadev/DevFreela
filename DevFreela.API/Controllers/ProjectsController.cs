@@ -1,8 +1,8 @@
-﻿using DevFreela.Core.Entities;
-using DevFreela.Application.Models;
-using DevFreela.Infrastructure.Persistence;
+﻿using DevFreela.Application.Commands;
+using DevFreela.Application.Queries.GetAllProjects;
+using DevFreela.Application.Queries.GetProjectById;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DevFreela.API.Controllers;
 
@@ -11,116 +11,73 @@ namespace DevFreela.API.Controllers;
 
 public class ProjectsController : ControllerBase
 {
-    private readonly DevFreelaDbContext _context;
-    public ProjectsController(DevFreelaDbContext context)
+    private readonly IMediator _mediator;
+    public ProjectsController(IMediator mediator)
     {
-        _context = context;
+        _mediator = mediator;
     }
     
     // GET api/projects
     [HttpGet]
-    public IActionResult Get(string search = "", int page = 0, int size = 3)
+    public async Task<IActionResult> GetAll()
     {
-        var projects = _context.Projects
-            .Include(p => p.Client)
-            .Include(p => p.Freelancer)
-            .Where(p => !p.IsDeleted && (search == "" || p.Title.Contains(search) || p.Description.Contains(search)))
-            .Skip(page * size)
-            .Take(size)
-            .ToList();
-        var model = projects.Select(ProjectItemViewModel.FromEntity).ToList();
-        
-        return Ok(model);
+        var result = await _mediator.Send(new GetAllProjectsQuery());
+        return Ok(result);
     }
     
     [HttpGet("{id:int}")]
-    public IActionResult GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
-        var project = _context.Projects
-            .Include(p => p.Client)
-            .Include(p => p.Freelancer)
-            .Include(p => p.Comments)
-            .SingleOrDefault(p => p.Id == id);
-        var model = ProjectViewModel.FromEntity(project);
-        return Ok(model);
+        var result = await _mediator.Send(new GetProjectByIdQuery(id));
+        if (!result.IsSuccess) BadRequest(result.Message);
+        return Ok(result);
     }
 
     [HttpPost]
-    public IActionResult Post(CreateProjectInputModel model)
+    public async Task<IActionResult> Post(CreateProjectCommand model)
     {
-        var project = model.ToEntity();
-        
-        _context.Projects.Add(project);
-        _context.SaveChanges();
-        return CreatedAtAction(nameof(GetById), new { id = 1 }, model);
+        var result = await _mediator.Send(model);
+        if (!result.IsSuccess) BadRequest(result.Message);
+        return CreatedAtAction(nameof(GetById), new { id = result.Data }, model);
     }
 
     [HttpPut("{id:int}")]
-    public IActionResult Put(int id, UpdateProjectInputModel model)
+    public async Task<IActionResult> Put(int id, UpdateProjectCommand model)
     {
-        var project = _context.Projects.SingleOrDefault(p => p.Id == id);
-        if (project == null)
-            return NotFound();
-        
-        project.Update(model.Title, model.Description, model.TotalCost);
-        _context.SaveChanges();
-        
+        var result = await _mediator.Send(model);
+        if (!result.IsSuccess) BadRequest(result.Message);
         return NoContent();
     }
-    
+
     [HttpDelete("{id:int}")]
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        var project = _context.Projects.SingleOrDefault(p => p.Id == id);
-        if (project == null)
-            return NotFound();
-        
-        project.SetIsDeleted();
-        _context.Projects.Update(project);
-        _context.SaveChanges();
-        
+        var result = await _mediator.Send(new DeleteProjectCommand(id));
+        if (!result.IsSuccess) BadRequest(result.Message);
         return NoContent();
     }
 
     [HttpPut("{id:int}/start")]
-    public IActionResult Start(int id)
+    public async Task<IActionResult> Start(int id)
     {
-        var project = _context.Projects.SingleOrDefault(p => p.Id == id);
-        if (project == null)
-            return NotFound();
-        
-        project.Start();
-        _context.Projects.Update(project);
-        _context.SaveChanges();
-        
+        var result = await _mediator.Send(new StartProjectCommand(id));
+        if (!result.IsSuccess) BadRequest(result.Message);
         return NoContent();
     }
     
     [HttpPut("{id:int}/complete")]
-    public IActionResult Complete(int id)
+    public async Task<IActionResult> Complete(int id)
     {
-        var project = _context.Projects.SingleOrDefault(p => p.Id == id);
-        if (project == null)
-            return NotFound();
-        
-        project.Complete();
-        _context.Projects.Update(project);
-        _context.SaveChanges();
-        
+        var result = await _mediator.Send(new CompleteProjectCommand(id));
+        if (!result.IsSuccess) BadRequest(result.Message);
         return NoContent();
     }
-
+    
     [HttpPost("{id:int}/comments")]
-    public IActionResult PostComment(int id, CreateProjectCommentInputModel model)
+    public async Task<IActionResult> PostComment(int id, PostCommentCommand model)
     {
-        var project = _context.Projects.SingleOrDefault(p => p.Id == id);
-        if (project == null)
-            return NotFound();
-        
-        var comment = new ProjectComment(model.Content, model.IdProject, model.IdUser);
-        _context.ProjectComments.Add(comment);
-        _context.SaveChanges();
-        
+        var result = await _mediator.Send(model);
+        if (!result.IsSuccess) BadRequest(result.Message);
         return NoContent();
     }
 }

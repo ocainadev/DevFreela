@@ -9,44 +9,14 @@ public class DevFreelaDbContext : DbContext
     
     public DbSet<Project> Projects { get; set; }
     public DbSet<User> Users { get; set; }
-    public DbSet<Skill> Skills { get; set; }
-    public DbSet<UserSkill> UserSkills { get; set; }
     public DbSet<ProjectComment> ProjectComments { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder
-            .Entity<Skill>(e =>
-            {
-                e.HasKey(s => s.Id);
-            });
-        builder
-            .Entity<UserSkill>(e =>
-            {
-                e.HasKey(us => us.Id);
-                e.HasOne(u => u.Skill)
-                    .WithMany(us => us.UserSkills)
-                    .HasForeignKey(u => u.IdSkill)
-                    .OnDelete(DeleteBehavior.Restrict);
-            });
-        builder
-            .Entity<ProjectComment>(e =>
-            {
-                e.HasKey(pc => pc.Id);
-                e.HasOne(pc => pc.Project)
-                    .WithMany(pc => pc.Comments)
-                    .HasForeignKey(pc => pc.IdProject)
-                    .OnDelete(DeleteBehavior.Restrict);
-            });
-        builder
             .Entity<User>(e =>
             {
                 e.HasKey(u => u.Id);
-                
-                e.HasMany(u => u.Skills)
-                    .WithOne(us => us.User)
-                    .HasForeignKey(us => us.IdUser)
-                    .OnDelete(DeleteBehavior.Restrict);
             });
         builder
             .Entity<Project>(e =>

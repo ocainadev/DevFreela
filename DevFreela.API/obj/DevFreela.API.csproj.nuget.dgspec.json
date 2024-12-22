@@ -1,46 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {}
+    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {}
   },
   "projects": {
-    "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {
+    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.API\\DevFreela.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
+        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
         "projectName": "DevFreela.API",
-        "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
+        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.API\\DevFreela.API.csproj",
         "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.API\\obj\\",
+        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj"
               },
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
               },
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
               }
             }
           }
@@ -54,11 +47,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -98,44 +92,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
+    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
+        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
         "projectName": "DevFreela.Application",
-        "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
+        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
         "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Application\\obj\\",
+        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
               },
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
               }
             }
           }
@@ -149,11 +136,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -170,38 +164,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
         "projectName": "DevFreela.Core",
-        "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
         "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\obj\\",
+        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -214,11 +201,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "imports": [
             "net461",
             "net462",
@@ -235,41 +223,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
+    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
+        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
         "projectName": "DevFreela.Infrastructure",
-        "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
+        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Infrastructure\\obj\\",
+        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\dev\\Aprendizado\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
               }
             }
           }
@@ -283,11 +264,12 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -316,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

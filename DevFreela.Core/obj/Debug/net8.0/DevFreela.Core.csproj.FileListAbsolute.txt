@@ -10,3 +10,15 @@ C:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.dll
 C:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\refint\DevFreela.Core.dll
 C:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.pdb
 C:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\ref\DevFreela.Core.dll
+D:\dev\Aprendizado\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.deps.json
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.dll
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\bin\Debug\net8.0\DevFreela.Core.pdb
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.GeneratedMSBuildEditorConfig.editorconfig
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfoInputs.cache
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.AssemblyInfo.cs
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.csproj.CoreCompileInputs.cache
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.sourcelink.json
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.dll
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\refint\DevFreela.Core.dll
+d:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\DevFreela.Core.pdb
+D:\dev\Aprendizado\DevFreela\DevFreela.Core\obj\Debug\net8.0\ref\DevFreela.Core.dll
