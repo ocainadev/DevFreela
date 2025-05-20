@@ -1,0 +1,12 @@
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/bin/Debug/net9.0/DevFreela.Core.deps.json
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/bin/Debug/net9.0/DevFreela.Core.dll
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/bin/Debug/net9.0/DevFreela.Core.pdb
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.AssemblyInfoInputs.cache
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.AssemblyInfo.cs
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.csproj.CoreCompileInputs.cache
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.sourcelink.json
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.dll
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/refint/DevFreela.Core.dll
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/DevFreela.Core.pdb
+/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/Debug/net9.0/ref/DevFreela.Core.dll

@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.UnitTests/DevFreela.UnitTests.csproj": {}
+  },
+  "projects": {
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj",
+        "projectName": "DevFreela.Application",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/caina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj"
+              },
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj",
+        "projectName": "DevFreela.Core",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/caina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
+        "projectName": "DevFreela.Infrastructure",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/caina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.UnitTests/DevFreela.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.UnitTests/DevFreela.UnitTests.csproj",
+        "projectName": "DevFreela.UnitTests",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.UnitTests/DevFreela.UnitTests.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.UnitTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/caina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj"
+              },
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NExpect.Matchers.NSubstitute": {
+              "target": "Package",
+              "version": "[2.0.116, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

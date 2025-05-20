@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {}
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj": {}
   },
   "projects": {
-    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj": {
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj",
         "projectName": "DevFreela.Application",
-        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\DevFreela.Application.csproj",
-        "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Application\\obj\\",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/DevFreela.Application.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/caina/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,11 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj"
               },
-              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
-                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj"
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj"
               }
             }
           }
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -72,21 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj",
         "projectName": "DevFreela.Core",
-        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj",
-        "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\obj\\",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/caina/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -110,7 +110,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -131,21 +131,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj": {
+    "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
+        "projectUniqueName": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
         "projectName": "DevFreela.Infrastructure",
-        "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\DevFreela.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\scain\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Infrastructure\\obj\\",
+        "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/DevFreela.Infrastructure.csproj",
+        "packagesPath": "/home/caina/.nuget/packages/",
+        "outputPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\scain\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/caina/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -157,8 +157,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj": {
-                "projectPath": "C:\\dev\\csharp\\learning\\DevFreela\\DevFreela.Core\\DevFreela.Core.csproj"
+              "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj": {
+                "projectPath": "/home/caina/Documents/GitHub/DevFreela/DevFreela.Core/DevFreela.Core.csproj"
               }
             }
           }
@@ -173,7 +173,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -206,7 +206,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/caina/.dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

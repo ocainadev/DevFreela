@@ -29,8 +29,8 @@ public class CreateProjectHandler : IRequestHandler<CreateProjectCommand, Result
     public async Task<ResultViewModel<int>> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
     {
         var project = request.ToEntity();
-        await _repository.AddAsync(project);
+        var id = await _repository.AddAsync(project);
         
-        return ResultViewModel<int>.Success(project.Id);
+        return ResultViewModel<int>.Success(id);
     }
 }
