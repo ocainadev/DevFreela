@@ -7,4 +7,5 @@ public interface IUserRepository
     Task<List<User>> GetAllAsync();
     Task<User> GetByIdAsync(int id);
     Task<int> AddAsync(User user);
+    Task<User> Login(string email, string passwordHash);
 }

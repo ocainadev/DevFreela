@@ -1,13 +1,16 @@
 ﻿using 
     DevFreela.Application.Commands.UserCommands;
+using DevFreela.Application.Models;
 using DevFreela.Application.Queries.UserQueries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevFreela.API.Controllers;
 
 [ApiController]
 [Route("api/users")]
+[Authorize]
 
 public class UsersController : ControllerBase
 {
@@ -35,6 +38,7 @@ public class UsersController : ControllerBase
     
     // POST api/users
     [HttpPost]
+    [AllowAnonymous]
     public async Task<IActionResult> Post(CreateUserCommand model)
     {
         var result = await _mediator.Send(model);
@@ -49,6 +53,15 @@ public class UsersController : ControllerBase
         var description = $"File: {file.FileName}, Size: {file.Length}";
         
         return Ok(description);
+    }
+
+    [HttpPut("login")]
+    [AllowAnonymous]
+    public async Task<IActionResult> Login(LoginUserCommand model)
+    {
+        var result = await _mediator.Send(model);
+        if (!result.IsSuccess) BadRequest(result.Message);
+        return Ok(result);
     }
     
 }

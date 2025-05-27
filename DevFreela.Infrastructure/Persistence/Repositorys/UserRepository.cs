@@ -12,9 +12,9 @@ public class UserRepository : IUserRepository
     }
     private readonly DevFreelaDbContext _context;
 
-    public Task<List<User>> GetAllAsync()
+    public async Task<List<User>> GetAllAsync()
     {
-        return _context.Users.AsNoTracking().ToListAsync();
+        return await _context.Users.AsNoTracking().ToListAsync();
     }
 
     public async Task<User> GetByIdAsync(int id)
@@ -27,5 +27,11 @@ public class UserRepository : IUserRepository
         await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
         return user.Id;
+    }
+
+    public async Task<User> Login(string email, string passwordHash)
+    {
+        return await _context.Users.SingleOrDefaultAsync(u => u.Email == email && u.Password == passwordHash);
+        
     }
 }
