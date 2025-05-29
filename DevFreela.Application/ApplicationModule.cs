@@ -1,4 +1,5 @@
 ﻿using DevFreela.Application.Commands;
+using DevFreela.Application.Commands.UserCommands;
 using DevFreela.Application.Models;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,7 +16,7 @@ public static class ApplicationModule
     }
     private static IServiceCollection AddHandlers(this IServiceCollection services)
     {
-        services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining<UpdateProjectCommand>());
+        services.AddMediatR(config => config.RegisterServicesFromAssemblyContaining<LoginUserCommand>());
         return services;
     }
 }

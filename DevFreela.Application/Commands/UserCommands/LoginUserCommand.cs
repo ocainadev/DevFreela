@@ -1,12 +1,11 @@
 ﻿using DevFreela.Application.Models;
-using DevFreela.Core.Entities;
 using DevFreela.Core.Repositorys;
 using DevFreela.Infrastructure.Auth;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using SQLitePCL;
 
 namespace DevFreela.Application.Commands.UserCommands;
 
@@ -29,8 +28,10 @@ public class LoginUserHandler : IRequestHandler<LoginUserCommand, ResultViewMode
     public async Task<ResultViewModel<LoginViewModel>> Handle(LoginUserCommand request, CancellationToken cancellationToken)
     {
         var hash = _authService.ComputeHash(request.Password);
-        var user = await _repository.Login(request.Email, hash);
-
+        var user = await _repository.LoginAsync(request.Email, hash);
+        if (user is null)
+             return ResultViewModel<LoginViewModel>.Error("Email or password is incorrect");
+        
         var token = _authService.GenerateToken(user.Email, user.Role);
         var viewModel = new LoginViewModel(token);
         return ResultViewModel<LoginViewModel>.Success(viewModel); 

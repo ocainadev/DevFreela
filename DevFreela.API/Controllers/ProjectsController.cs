@@ -2,12 +2,14 @@
 using DevFreela.Application.Queries.GetAllProjects;
 using DevFreela.Application.Queries.GetProjectById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevFreela.API.Controllers;
 
 [ApiController]
 [Route("api/projects")]
+[Authorize]
 
 public class ProjectsController : ControllerBase
 {
@@ -19,7 +21,8 @@ public class ProjectsController : ControllerBase
     
     // GET api/projects
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    [Authorize(Roles = "freelancer, client")]
+    public async Task<IActionResult> Get()
     {
         var result = await _mediator.Send(new GetAllProjectsQuery());
         return Ok(result);
@@ -34,6 +37,7 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Roles = "client")]
     public async Task<IActionResult> Post(CreateProjectCommand model)
     {
         var result = await _mediator.Send(model);

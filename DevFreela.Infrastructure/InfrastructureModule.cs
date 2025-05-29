@@ -43,7 +43,8 @@ public static class InfrastructureModule
         services.AddScoped<IAuthService, AuthService>();
         services
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(o => 
+            .AddJwtBearer(o =>
+            {
                 o.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
@@ -53,7 +54,8 @@ public static class InfrastructureModule
                     ValidIssuer = configuration["Jwt:Issuer"],
                     ValidAudience = configuration["Jwt:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]))
-                });
-        return services;
+                };
+            });
+    return services;
     }
 }

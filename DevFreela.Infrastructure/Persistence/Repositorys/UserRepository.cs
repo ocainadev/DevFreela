@@ -29,9 +29,9 @@ public class UserRepository : IUserRepository
         return user.Id;
     }
 
-    public async Task<User> Login(string email, string passwordHash)
+    public async Task<User> LoginAsync(string email, string passwordHash)
     {
-        return await _context.Users.SingleOrDefaultAsync(u => u.Email == email && u.Password == passwordHash);
-        
+        var user = await _context.Users.SingleOrDefaultAsync(u => u.Email == email && u.Password == passwordHash);
+        return user;
     }
 }

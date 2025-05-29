@@ -9,7 +9,7 @@ using Microsoft.Identity.Client;
 
 namespace DevFreela.Application.Commands.UserCommands;
 
-public class CreateUserCommand : IRequest<ResultViewModel<int>>
+public class CreateUserCommand : IRequest<ResultViewModel>
 {
     public string FullName { get;  set; }
     public string Email { get;  set; }
@@ -18,10 +18,10 @@ public class CreateUserCommand : IRequest<ResultViewModel<int>>
     public string Role { get;  set; }
 
     public User ToEntity(string hash)
-        => new (FullName, Email, BirthDate,hash, Role);
+    => new (FullName, Email, BirthDate, hash, Role);
 }
 
-public class CreateUserHandler : IRequestHandler<CreateUserCommand, ResultViewModel<int>>
+public class CreateUserHandler : IRequestHandler<CreateUserCommand, ResultViewModel>
 {
     public CreateUserHandler(IUserRepository repository, IAuthService authsevice)
     {
@@ -30,12 +30,12 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, ResultViewMo
     }
     private readonly IUserRepository _repository;
     private readonly IAuthService _authService;
-    public async Task<ResultViewModel<int>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+    public async Task<ResultViewModel> Handle(CreateUserCommand request, CancellationToken cancellationToken)
     {
         var hash = _authService.ComputeHash(request.Password);
         var user = request.ToEntity(hash);
         await _repository.AddAsync(user);
         
-        return ResultViewModel<int>.Success(user.Id);
+        return ResultViewModel.Success();
     }
 }

@@ -12,7 +12,7 @@ public class AuthService : IAuthService
     private readonly IConfiguration _config;
     public AuthService(IConfiguration configuration)
     {
-        
+        _config = configuration;
     }
     
     public string ComputeHash(string password)
@@ -34,9 +34,9 @@ public class AuthService : IAuthService
 
     public string GenerateToken(string email, string role)
     {
-        var issuer = _config["Jwt:Issuer"];
-        var audience = _config["Jwt:Audience"];
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+        var issuer = _config["jwt:issuer"];
+        var audience = _config["jwt:audience"];
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["jwt:key"]));
         
         var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -46,7 +46,7 @@ public class AuthService : IAuthService
             new Claim(ClaimTypes.Role, role),
         };
 
-        var token = new JwtSecurityToken(issuer, audience, claims, null, DateTime.Now.AddHours(2));
+        var token = new JwtSecurityToken(issuer, audience, claims, null, DateTime.Now.AddHours(2), credentials);
         
         return new JwtSecurityTokenHandler().WriteToken(token);
     }

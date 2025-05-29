@@ -10,7 +10,6 @@ namespace DevFreela.API.Controllers;
 
 [ApiController]
 [Route("api/users")]
-[Authorize]
 
 public class UsersController : ControllerBase
 {
