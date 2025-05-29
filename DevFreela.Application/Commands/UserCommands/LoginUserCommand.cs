@@ -1,11 +1,7 @@
 ﻿using DevFreela.Application.Models;
 using DevFreela.Core.Repositorys;
 using DevFreela.Infrastructure.Auth;
-using DevFreela.Infrastructure.Persistence;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
-using SQLitePCL;
 
 namespace DevFreela.Application.Commands.UserCommands;
 
